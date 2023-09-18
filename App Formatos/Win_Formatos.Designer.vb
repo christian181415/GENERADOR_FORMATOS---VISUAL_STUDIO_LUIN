@@ -23,15 +23,16 @@ Partial Class Win_Formatos
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Win_Formatos))
         Me.PAccesos = New System.Windows.Forms.Panel()
+        Me.BtnRequerimientos = New System.Windows.Forms.Button()
         Me.PVentanas = New System.Windows.Forms.Panel()
         Me.TimerAnimations = New System.Windows.Forms.Timer(Me.components)
         Me.PMenu = New System.Windows.Forms.Panel()
-        Me.BtnAccess = New System.Windows.Forms.Button()
-        Me.BtnClose = New System.Windows.Forms.Button()
-        Me.BtnRequerimientos = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnClose = New System.Windows.Forms.Button()
+        Me.BtnAccess = New System.Windows.Forms.Button()
         Me.PAccesos.SuspendLayout()
         Me.PMenu.SuspendLayout()
         Me.SuspendLayout()
@@ -47,6 +48,24 @@ Partial Class Win_Formatos
         Me.PAccesos.Name = "PAccesos"
         Me.PAccesos.Size = New System.Drawing.Size(63, 536)
         Me.PAccesos.TabIndex = 2
+        '
+        'BtnRequerimientos
+        '
+        Me.BtnRequerimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BtnRequerimientos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnRequerimientos.FlatAppearance.BorderSize = 0
+        Me.BtnRequerimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRequerimientos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRequerimientos.ForeColor = System.Drawing.Color.White
+        Me.BtnRequerimientos.Image = Global.App_Formatos.My.Resources.Resources.requerimiento
+        Me.BtnRequerimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnRequerimientos.Location = New System.Drawing.Point(0, 0)
+        Me.BtnRequerimientos.Name = "BtnRequerimientos"
+        Me.BtnRequerimientos.Padding = New System.Windows.Forms.Padding(8, 0, 20, 0)
+        Me.BtnRequerimientos.Size = New System.Drawing.Size(63, 42)
+        Me.BtnRequerimientos.TabIndex = 1
+        Me.BtnRequerimientos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnRequerimientos.UseVisualStyleBackColor = True
         '
         'PVentanas
         '
@@ -76,52 +95,19 @@ Partial Class Win_Formatos
         Me.PMenu.Size = New System.Drawing.Size(978, 43)
         Me.PMenu.TabIndex = 0
         '
-        'BtnAccess
+        'Button2
         '
-        Me.BtnAccess.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BtnAccess.FlatAppearance.BorderSize = 0
-        Me.BtnAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAccess.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAccess.ForeColor = System.Drawing.Color.White
-        Me.BtnAccess.Location = New System.Drawing.Point(0, 0)
-        Me.BtnAccess.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnAccess.Name = "BtnAccess"
-        Me.BtnAccess.Size = New System.Drawing.Size(63, 43)
-        Me.BtnAccess.TabIndex = 0
-        Me.BtnAccess.Text = "≡"
-        Me.BtnAccess.UseVisualStyleBackColor = True
-        '
-        'BtnClose
-        '
-        Me.BtnClose.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BtnClose.FlatAppearance.BorderSize = 0
-        Me.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnClose.ForeColor = System.Drawing.Color.White
-        Me.BtnClose.Location = New System.Drawing.Point(915, 0)
-        Me.BtnClose.Name = "BtnClose"
-        Me.BtnClose.Size = New System.Drawing.Size(63, 43)
-        Me.BtnClose.TabIndex = 1
-        Me.BtnClose.Text = "X"
-        Me.BtnClose.UseVisualStyleBackColor = True
-        '
-        'BtnRequerimientos
-        '
-        Me.BtnRequerimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BtnRequerimientos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnRequerimientos.FlatAppearance.BorderSize = 0
-        Me.BtnRequerimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnRequerimientos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRequerimientos.ForeColor = System.Drawing.Color.White
-        Me.BtnRequerimientos.Image = Global.App_Formatos.My.Resources.Resources.requerimiento
-        Me.BtnRequerimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnRequerimientos.Location = New System.Drawing.Point(0, 0)
-        Me.BtnRequerimientos.Name = "BtnRequerimientos"
-        Me.BtnRequerimientos.Padding = New System.Windows.Forms.Padding(8, 0, 20, 0)
-        Me.BtnRequerimientos.Size = New System.Drawing.Size(63, 42)
-        Me.BtnRequerimientos.TabIndex = 1
-        Me.BtnRequerimientos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BtnRequerimientos.UseVisualStyleBackColor = True
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(789, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(63, 43)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "‒"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -137,19 +123,34 @@ Partial Class Win_Formatos
         Me.Button1.Text = "❐"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnClose
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(789, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(63, 43)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "‒"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnClose.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BtnClose.FlatAppearance.BorderSize = 0
+        Me.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClose.ForeColor = System.Drawing.Color.White
+        Me.BtnClose.Location = New System.Drawing.Point(915, 0)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(63, 43)
+        Me.BtnClose.TabIndex = 1
+        Me.BtnClose.Text = "X"
+        Me.BtnClose.UseVisualStyleBackColor = True
+        '
+        'BtnAccess
+        '
+        Me.BtnAccess.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BtnAccess.FlatAppearance.BorderSize = 0
+        Me.BtnAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAccess.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAccess.ForeColor = System.Drawing.Color.White
+        Me.BtnAccess.Location = New System.Drawing.Point(0, 0)
+        Me.BtnAccess.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnAccess.Name = "BtnAccess"
+        Me.BtnAccess.Size = New System.Drawing.Size(63, 43)
+        Me.BtnAccess.TabIndex = 0
+        Me.BtnAccess.Text = "≡"
+        Me.BtnAccess.UseVisualStyleBackColor = True
         '
         'Win_Formatos
         '
@@ -161,6 +162,7 @@ Partial Class Win_Formatos
         Me.Controls.Add(Me.PAccesos)
         Me.Controls.Add(Me.PMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Win_Formatos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Win_Formatos"

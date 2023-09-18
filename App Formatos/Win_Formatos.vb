@@ -9,6 +9,7 @@ Public Class Win_Formatos
     Private Sub Win_Formatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Accesos = PAccesos.Size.Width
         TimerAnimations.Start()
+        Requeriment.Show(UC_Requeriment, PVentanas)
     End Sub
     Private Sub TimerAnimations_Tick(sender As Object, e As EventArgs) Handles TimerAnimations.Tick
         If Animation = True Then
